@@ -1,0 +1,62 @@
+.swiper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.swiperSlideIsActive {
+  filter: opacity(1) !important;
+}
+
+.arrowButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: fluid(80, 0);
+
+  > button {
+    width: fluid(40, 20);
+    border: none;
+    background: var(--white);
+    box-shadow: 0px 0px rem(15) 0px #3877ee2a;
+    > svg {
+      stroke: var(--blue);
+    }
+  }
+}
+
+@media (width <= 768px) {
+  .swiper {
+    height: 100%;
+    align-items: start;
+
+    > :global(.swiper) {
+      height: 100%;
+      position: static;
+
+      > :global(.swiper-pagination) {
+        position: absolute;
+        bottom: rem(50);
+
+        > :global(.swiper-pagination-bullet) {
+          background-color: var(--black-blue);
+          opacity: 0.5;
+          width: fluid(12, 6);
+          height: fluid(12, 6);
+        }
+
+        > :global(.swiper-pagination-bullet-active) {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .arrowButton {
+    display: none;
+  }
+
+  .swiperSlide {
+    filter: opacity(0.5);
+  }
+}

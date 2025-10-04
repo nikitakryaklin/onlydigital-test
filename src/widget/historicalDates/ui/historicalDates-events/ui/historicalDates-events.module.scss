@@ -1,0 +1,13 @@
+.events {
+  width: 100%;
+}
+
+@media (width <= 768px) {
+  .events {
+    flex: 1;
+    padding-top: 16px;
+    border-top: 1px solid var(--gray);
+    width: 100%;
+    align-self: center;
+  }
+}

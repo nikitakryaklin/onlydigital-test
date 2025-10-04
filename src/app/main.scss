@@ -1,0 +1,43 @@
+:root {
+  --blue: #3877ee;
+  --black-blue: #42567a;
+  --black-blue5a: #42567a5a;
+  --pink: #ef5da8;
+  --gray: #303e583a;
+  --background: #e5e5e5;
+  --white: #ffffff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "PT sans", system-ui;
+  font-size: fluid(20, 14);
+  font-weight: 400;
+  width: 100vw;
+  padding: 0 10%;
+  background-color: var(--background);
+}
+
+p {
+  margin: 0;
+  color: var(--black-blue);
+}
+
+h1 {
+  font-size: fluid(58, 20);
+  font-weight: 700;
+  color: var(--black-blue);
+  margin: 0;
+}
+
+h3 {
+  font-size: fluid(20, 14);
+  font-weight: 700;
+  color: var(--black-blue);
+  margin: 0;
+}

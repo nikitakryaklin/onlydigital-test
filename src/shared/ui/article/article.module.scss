@@ -1,0 +1,17 @@
+.article {
+  width: fluid(280, 200);
+
+  display: flex;
+  flex-direction: column;
+  gap: rem(15);
+}
+
+@media (width <= 768px) {
+  .article {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: rem(15);
+  }
+}

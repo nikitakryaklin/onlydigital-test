@@ -1,0 +1,30 @@
+.widget {
+  padding-left: fluid(78, 0);
+  position: relative;
+  max-width: 150px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: fluid(5, 0);
+    height: 100%;
+    background: #3877ee;
+    background: linear-gradient(
+      0deg,
+      rgba(56, 119, 238, 1) 0%,
+      rgba(239, 93, 168, 1) 100%
+    );
+  }
+}
+
+@media (width <= 768px) {
+  .widget {
+    padding: 0;
+
+    &::after {
+      display: none;
+    }
+  }
+}

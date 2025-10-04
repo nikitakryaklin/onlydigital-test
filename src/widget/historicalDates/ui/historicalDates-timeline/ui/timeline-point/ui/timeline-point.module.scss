@@ -1,0 +1,23 @@
+.point {
+  position: absolute;
+  border-radius: 100%;
+  background-color: var(--black-blue);
+  cursor: pointer;
+  transform: scale(0.2);
+  transition: trasform, 0.3s ease-in-out;
+}
+
+.pointIsActive {
+  background-color: var(--background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale(1);
+  border: 2px solid var(--black-blue5a);
+
+  > p {
+    transition: trasform, 0.7s ease-in-out;
+
+    transform-origin: center center;
+  }
+}
